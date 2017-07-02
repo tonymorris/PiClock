@@ -378,10 +378,10 @@ class Radar(QtGui.QLabel):
                 self.satellite = 1
         except KeyError:
             pass
-        self.baseurl = self.mapurl(radar, rect, False)
+        self.baseurl = 'http://www.bom.gov.au/radar/IDR663.gif' # self.mapurl(radar, rect, False)
         print "google map base url: " + self.baseurl
-        self.mkurl = self.mapurl(radar, rect, True)
-        self.wxurl = self.radarurl(radar, rect)
+        self.mkurl = 'http://www.bom.gov.au/radar/IDR663.gif' # self.mapurl(radar, rect, True)
+        self.wxurl = 'http://www.bom.gov.au/radar/IDR663.gif' # self.radarurl(radar, rect)
         print "radar url: " + self.wxurl
         QtGui.QLabel.__init__(self, parent)
         self.interval = Config.radar_refresh * 60
