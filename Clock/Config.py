@@ -47,6 +47,7 @@ weather_refresh = 30    # minutes
 wind_degrees = 1
 # Depreciated: use 'satellite' key in radar section, on a per radar basis
 # if this is used, all radar blocks will get satellite images
+satellite = 0
 
 # gives all text additional attributes using QT style notation
 # example: fontattr = 'font-weight: bold; '
