@@ -5,7 +5,8 @@ from PyQt4.QtGui import QColor
 # LOCATION(S)
 # Further radar configuration (zoom, marker location) can be
 # completed under the RADAR section
-primary_coordinates = -27.646381, 152.886692  # Change to your Lat/Lon
+# primary_coordinates = -27.646381, 152.886692  # Home
+primary_coordinates = -27.395281, 153.119996  # Brisbane Airport
 
 wuprefix = 'http://api.wunderground.com/api/'
 wulocation = LatLng(primary_coordinates[0], primary_coordinates[1])
@@ -43,10 +44,9 @@ metric = 1  # 0 = English, 1 = Metric
 radar_refresh = 10      # minutes
 weather_refresh = 30    # minutes
 # Wind in degrees instead of cardinal 0 = cardinal, 1 = degrees
-wind_degrees = 0
+wind_degrees = 1
 # Depreciated: use 'satellite' key in radar section, on a per radar basis
 # if this is used, all radar blocks will get satellite images
-satellite = 1
 
 # gives all text additional attributes using QT style notation
 # example: fontattr = 'font-weight: bold; '
