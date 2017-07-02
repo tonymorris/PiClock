@@ -26,8 +26,8 @@ digital = 1             # 1 = Digtal Clock, 0 = Analog Clock
 
 # Goes with light blue config (like the default one)
 digitalcolor = "#50CBEB"
-digitalformat = "{0:%I:%M.%S %p}"  # The format of the time
-digitalsize = 100
+digitalformat = "{0:%H:%M.%S}"  # The format of the time
+digitalsize = 120
 # The above example shows in this way:
 #  https://github.com/n0bel/PiClock/blob/master/Documentation/Digital%20Clock%20v1.jpg
 # ( specifications of the time string are documented here:
